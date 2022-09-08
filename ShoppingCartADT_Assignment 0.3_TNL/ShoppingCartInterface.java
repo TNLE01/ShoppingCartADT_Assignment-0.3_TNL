@@ -32,7 +32,7 @@ public interface ShoppingCartInterface<T> {
 	
 	/**
 	 * Remove one of a certain Item
-	 * @param item Item that is going to be added to the Cart
+	 * @param item Item that is going to be remove from the Cart
 	 * @return True if successful, false otherwise
 	 */
 	public boolean remove(T item);
@@ -67,5 +67,12 @@ public interface ShoppingCartInterface<T> {
 	 * @return price of everything in the Cart
 	 */
 	public double totalPrice();
+	
+	/**
+	 * Remove all of a certain Item
+	 * @param item Item that is going to be remove from the Cart
+	 * @return True if successful, false otherwise
+	 */
+	public boolean removeAll(T item);
 	
 }
